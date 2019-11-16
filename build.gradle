@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'xyz.phanta.jxmlrpc'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://jitpack.io/' }
+}
+
+dependencies {
+    implementation 'com.github.phantamanta44:jsr305:1.0.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.2.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.2.0'
+}
+
+test {
+    useJUnitPlatform()
+}
